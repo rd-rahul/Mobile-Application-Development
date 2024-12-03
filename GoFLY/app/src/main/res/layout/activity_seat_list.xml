@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Header Text -->
+    <TextView
+        android:id="@+id/seatSelectionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Your Seats"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_italic"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="#000000" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        >
+
+        <!-- From Location Box -->
+        <TextView
+            android:id="@+id/fromLocation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="12dp"
+            android:text=""
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="#000000"
+
+            android:layout_marginEnd="4dp" />
+
+        <!-- Arrow Marker -->
+        <ImageView
+            android:id="@+id/arrowMarker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="12dp"
+            android:text="→"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:src="@drawable/straight_line_flight"
+            android:layout_marginEnd="4dp" />
+
+        <!-- To Location Box -->
+        <TextView
+            android:id="@+id/toLocation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="12dp"
+            android:text=""
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="#000000" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <!-- From Location Box -->
+        <TextView
+            android:id="@+id/fromLocationTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="12dp"
+            android:text=""
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="#000000"
+
+            android:layout_marginEnd="4dp" />
+
+        <!-- Arrow Marker -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="12dp"
+            android:text="→"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:layout_marginEnd="4dp" />
+
+        <!-- To Location Box -->
+        <TextView
+            android:id="@+id/toLocationTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="12dp"
+            android:text=""
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <!-- Dynamic Seat Layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp">
+
+        <GridLayout
+            android:id="@+id/seatLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:padding="8dp"
+            android:layout_gravity="center"
+            android:alignmentMode="alignBounds"
+            android:rowCount="5">
+            <!-- Seats will be dynamically added here -->
+        </GridLayout>
+    </ScrollView>
+
+    <!-- Selected Seats Display -->
+    <TextView
+        android:id="@+id/selectedSeatsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected Seats: None"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="#000000" />
+
+    <!-- Confirm Booking Button -->
+    <Button
+        android:id="@+id/confirmBookingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Booking"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp" />
+</LinearLayout>

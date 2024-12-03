@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "986762425530",
+    "project_id": "flightmanagement-c9a16",
+    "storage_bucket": "flightmanagement-c9a16.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986762425530:android:1f904651eafad591b8be83",
+        "android_client_info": {
+          "package_name": "com.example.flytix"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwbHe_j8bNpA_myYU6pdnf3I543R1cYyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

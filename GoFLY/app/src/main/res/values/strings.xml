@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FLYTIX</string>
+    <string name="flytix">FLYTIX</string>
+    <string name="intro_title">Fly anywhere easily\nwithout obstacles</string>
+    <string name="intro_subtitle">Experience the unparalled\nfreedom of unhindered\nflight as you effortlessly traverse</string>
+    <string name="get_started">Get Started</string>
+    <string name="have_account">I have an account</string>
+    <string name="from">from</string>
+    <string name="to">to</string>
+    <string name="toShort">to</string>
+    <string name="password">Password</string>
+    <string name="register_for_new_user">Register for New User</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="passdet">Passenger Details</string>
+    <string name="googlepay_button_content_description">Google Pay</string>
+</resources>
